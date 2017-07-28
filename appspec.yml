@@ -1,0 +1,18 @@
+version: 0.0
+ 
+os: linux
+files:
+   - source: /
+     destination: /var/www
+permissions:
+   - object: /var/www
+     pattern: "**"
+     owner: ec2-user
+     group: user
+     mode: 755
+     type:
+       - file
+hooks:
+   AfterInstall:
+   - location: /var/www/runTriathlonNerd.sh
+     runas: root
