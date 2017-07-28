@@ -11,4 +11,4 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/TriathlonNerd-0.1.0.jar.jar
+    - target/TriathlonNerd-0.1.0.jar
